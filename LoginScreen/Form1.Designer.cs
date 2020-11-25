@@ -35,6 +35,7 @@ namespace LoginScreen
             this.outputLabel = new System.Windows.Forms.Label();
             this.userInput = new System.Windows.Forms.TextBox();
             this.pinInput = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // userLabel
@@ -94,11 +95,22 @@ namespace LoginScreen
             this.pinInput.Size = new System.Drawing.Size(100, 31);
             this.pinInput.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(328, 215);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 41);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(484, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pinInput);
             this.Controls.Add(this.userInput);
             this.Controls.Add(this.outputLabel);
@@ -120,6 +132,7 @@ namespace LoginScreen
         private System.Windows.Forms.Label outputLabel;
         private System.Windows.Forms.TextBox userInput;
         private System.Windows.Forms.TextBox pinInput;
+        private System.Windows.Forms.Button button1;
     }
 }
 
